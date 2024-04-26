@@ -1,0 +1,399 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Navbar from "../components/Navbar.astro";
+
+import Image from "astro/components/Image.astro";
+
+import Modal from "../components/Modal.astro";
+
+import BackToTop from "../components/BackToTop.astro";
+
+import heroBg from "../../public/placeholder.svg";
+---
+
+<BaseLayout titre="titre">
+    <BackToTop />
+    <Navbar />
+    <main id="top">
+        <div
+            class="grid grid-cols-12 gap-6 mb-8 md:mb-16"
+            style="background-image: url(/eve-bg01.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;"
+        >
+            <div
+                class="md:hidden col-start-1 col-span-12 mx-4 mt-4 flex justify-center items-center"
+            >
+                <Image class="" src={heroBg} alt="Hero background" />
+            </div>
+
+            <div
+                class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 md:py-16 lg:py-32 xl:py-40 bg-base-100 opacity-90"
+            >
+                <div class="flex flex-col w-5/6 mx-auto justify-start m-4">
+                    <h1
+                        class="text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-extrabold mb-4"
+                    >
+                        L'accompagnement de <span class="text-accent"
+                            >votre</span
+                        > bien-etre
+                    </h1>
+                    <p class="text-lg xl:text-xl mb-4 w-5/6 text-left">
+                        Découvrez comment mes méthodes douces et naturelles
+                        peuvent vous aider à retrouver l'équilibre et la
+                        sérénité dans votre vie quotidienne.
+                    </p>
+                    <div class="">
+                        <Modal btn="Prendre RDV" />
+                        <a href="" class="btn btn-outline text-lg mb-4"
+                            >En savoir plus</a
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="traitements"></div>
+        <div class="grid grid-cols-12 gap-6 mb-8 md:mb-16 mx-4">
+            <div class="col-start-1 col-span-12 text-center">
+                <p class="text-2xl xl:text-3xl mb-4 text-accent font-bold">
+                    Les traitements offerts
+                </p>
+            </div>
+            <div
+                class="col-start-1 col-span-12 md:col-span-6 lg:col-span-4 border-2 rounded border-base-300 p-4 w-11/12 mx-auto group"
+            >
+                <button class="flex gap-4 items-start">
+                    <i
+                        class="fa-solid fa-chevron-right text-xl md:text-2xl text-primary group-hover:scale-125 transition ease-in-out duration-500"
+                    ></i>
+
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-left">
+                        Perte de poids
+                    </h3>
+                </button>
+                <p class="text-lg xl:text-xl mb-4 w-10/12">
+                    Une approche alternative pour atteindre vos objectifs de
+                    perte de poids.
+                </p>
+            </div>
+            <div
+                class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 lg:col-start-5 lg:col-span-4 border-2 rounded border-base-300 p-4 w-11/12 mx-auto group"
+            >
+                <button class="flex gap-4 items-start">
+                    <i
+                        class="fa-solid fa-chevron-right text-xl md:text-2xl text-primary group-hover:scale-125 transition ease-in-out duration-500"
+                    ></i>
+
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-left">
+                        Parcours de fertilite
+                    </h3>
+                </button>
+                <p class="text-lg xl:text-xl mb-4 w-11/12">
+                    Un accompagnement lors des parcours médicalement assistés
+                    (PMA) et Fécondation in vitro (FIV, inséminations etc.), au
+                    cours de la grossesse, en préparation à l’accouchement.
+                </p>
+            </div>
+            <div
+                class="col-start-1 col-span-12 md:col-start-1 md:col-span-6 lg:col-start-9 lg:col-span-4 border-2 rounded border-base-300 p-4 w-11/12 mx-auto group"
+            >
+                <button class="flex gap-4 items-start">
+                    <i
+                        class="fa-solid fa-chevron-right text-xl md:text-2xl text-primary group-hover:scale-125 transition ease-in-out duration-500"
+                    ></i>
+
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-left">
+                        Arret du tabagisme et toxicomanie
+                    </h3>
+                </button>
+                <p class="text-lg xl:text-xl mb-4">
+                    Augmenter vos chances d'arreter de fumer,de consommer des
+                    drogues et alcools, de vous debaresser des ces mauvaise
+                    habitude et effectuer un changement dans votre vie.
+                </p>
+            </div>
+
+            <div
+                class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 lg:col-start-1 lg:col-span-4 border-2 rounded border-base-300 p-4 w-11/12 mx-auto group"
+            >
+                <button class="flex gap-4 items-start">
+                    <i
+                        class="fa-solid fa-chevron-right text-xl md:text-2xl text-primary group-hover:scale-125 transition ease-in-out duration-500"
+                    ></i>
+
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-left">
+                        Trouble physique
+                    </h3>
+                </button>
+
+                <p class="text-lg xl:text-xl mb-4"></p>
+            </div>
+            <div
+                class="col-start-1 col-span-12 md:col-start-1 md:col-span-6 lg:col-start-5 lg:col-span-4 border-2 rounded border-base-300 p-4 w-11/12 mx-auto group"
+            >
+                <button class="flex gap-4 items-start">
+                    <i
+                        class="fa-solid fa-chevron-right text-xl md:text-2xl text-primary group-hover:scale-125 transition ease-in-out duration-500"
+                    ></i>
+
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-left">
+                        Trouble psychologique
+                    </h3>
+                </button>
+
+                <p class="text-lg xl:text-xl mb-4 w-11/12">
+                    Ils vont permettront de contribuer à soulager le stress,
+                    l’anxiété, les douleurs, les troubles digestifs, les
+                    troubles du sommeil, les migraines, les troubles
+                    dermatologiques, les dysménorrhées, etc.
+                </p>
+            </div>
+            <div
+                class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 lg:col-start-9 lg:col-span-4 border-2 rounded border-base-300 p-4 w-11/12 mx-auto group"
+            >
+                <button class="flex gap-4 items-start">
+                    <i
+                        class="fa-solid fa-chevron-right text-xl md:text-2xl text-primary group-hover:scale-125 transition ease-in-out duration-500"
+                    ></i>
+
+                    <h3 class="text-xl md:text-2xl font-bold mb-4 text-left">
+                        Accompagnement de maladies lourdes
+                    </h3>
+                </button>
+
+                <p class="text-lg xl:text-xl mb-4 w-11/12">
+                    Ces séances sont très utile également dans l’accompagnement
+                    des maladies lourdes, et contribuent grandement au maintien
+                    du bien être de la personne. Elles favorisent un état de
+                    bien être et d’apaisement.
+                </p>
+            </div>
+        </div>
+
+        <div
+            id="bio"
+            class="grid grid-cols-12 gap-6 py-8 mb-8 md:mb-16 bg-base-200 opacity-90"
+        >
+            <div class="col-start-1 col-span-12 text-center">
+                <p class="text-2xl xl:text-3xl mb-4 text-accent font-bold">
+                    A propos
+                </p>
+            </div>
+
+            <div class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-6">
+                <div class="flex flex-col pt-4 px-6">
+                    <article>
+                        <div class="float-left h-80 w-64 mr-4 bg-accent">
+                            <img src="" alt="" />
+                        </div>
+                        <p class="text-lg xl:text-xl text-center mb-4">
+                            Évelyne Veschambre, je suis biologiste de première
+                            formation. Passionnée de sciences humaines, je me
+                            suis dirigée vers la psychologie. Puis, j’ai
+                            découvert un outil extraordinaire : l’hypnose
+                            thérapeutique. Certifiée par la Société Française
+                            d’Hypnose (SFH) et connaissant le parcours de
+                            procréation médicalement assisté (PMA ou AMP)
+                            personnellement, j’exerce dans ce domaine depuis
+                            bientôt 15 ans. Je travaille en étroite
+                            collaboration avec des professionnels de la
+                            fertilité médicaux et paramédicaux. Nous avons
+                            ensemble mis au point un accompagnement spécifique
+                            et complet, adapté à chaque profil. Enfin, je me
+                            suis formée aux techniques de la médecine
+                            traditionnelle chinoise (MTC), ce qui a révolutionné
+                            ma pratique. Psychothérapeute, praticienne en MTC et
+                            hypnothérapeute, je mets mes compétences, expérience
+                            et outils au service des « projets bébés ».
+                        </p>
+                        <p class="text-lg xl:text-xl text-center mb-4">
+                            Je vous propose quelque soit l’endroit où vous êtes
+                            de pouvoir profiter de l’accompagnement ciblé
+                            hypnothérapie grâce à mes séances en audio mais
+                            également complétées par un suivi en visio. Si vous
+                            souhaitez me rencontrer, je consulte au cabinet à
+                            Tours (37) et au cabinet au Trois Îlets (972).
+                        </p>
+                        <p class="text-lg xl:text-xl text-center mb-4">
+                            Je suis à votre écoute et je vous dis à bientôt.
+                        </p>
+                        <p class="text-lg xl:text-xl text-center mb-4 italic">
+                            Évelyne
+                        </p>
+                    </article>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col-start-1 col-span-12 lg:col-start-7 lg:col-span-6">
+                <div class="m-8">
+                    <div
+                        style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"
+                    >
+                        <iframe
+                            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"
+                            src="https://www.dailymotion.com/embed/video/x8sr8qo"
+                            width="100%"
+                            height="100%"
+                            allowfullscreen
+                            title="Dailymotion Video Player"
+                        >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="grid grid-cols-12 gap-6 py-8 mb-8">
+            <div class="col-start-1 col-span-12 text-center">
+                <p class="text-2xl xl:text-3xl mb-4 text-accent font-bold">
+                    Contact
+                </p>
+            </div>
+
+            <div class="col-start-1 col-span-12 lg:col-start-1 lg:col-span-6">
+                <div class="m-8">
+                    <iframe
+                        class="w-full h-96 rounded"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3862.010368716898!2d-61.06582242489493!3d14.541399585938024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1711640924601!5m2!1sfr!2sca"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-start-1 col-span-12 lg:col-start-7 lg:col-span-6">
+                <div
+                    class="m-8 h-96 rounded flex flex-col justify-center items-center border-2 border-base-300"
+                >
+                    <div class="text-left">
+                        <p class="text-lg xl:text-xl mb-2 font-bold">Adresse</p>
+                        <p class="text-lg xl:text-xl mb-4">
+                            1 rue de la dorade,
+                        </p>
+                        <p class="text-lg xl:text-xl mb-4">les trois ilets,</p>
+                        <p class="text-lg xl:text-xl mb-4">97231</p>
+
+                        <p class="text-lg xl:text-xl mb-2 font-bold">
+                            Telephone
+                        </p>
+                        <p class="text-lg xl:text-xl mb-4">0696204415</p>
+
+                        <p class="text-lg xl:text-xl mb-2 font-bold">Email</p>
+                        <p class="text-lg xl:text-xl mb-4">
+                            evelyne@bienetrepsy.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="faq" class="grid grid-cols-12 gap-6 mb-8 md:mb-16 mx-8">
+            <div class="col-start-1 col-span-12 text-center">
+                <p class="text-2xl xl:text-3xl mb-4 text-accent font-bold">
+                    Foire Aux Questions
+                </p>
+            </div>
+
+            <div class="col-start-1 col-span-12">
+                <div class="join join-vertical">
+                    <div
+                        class="collapse collapse-arrow join-item border border-base-300"
+                    >
+                        <input
+                            type="radio"
+                            name="my-accordion-4"
+                            checked="checked"
+                        />
+                        <div class="collapse-title text-xl font-medium">
+                            <h3
+                                class="text-xl md:text-2xl font-bold mb-4 text-left w-10/12"
+                            >
+                                Pourquoi faire une séance ?
+                            </h3>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-lg xl:text-xl mb-4">
+                                Une séance peut être bénéfique dans de
+                                nombreuses situations et apporte un bien être
+                                physique et émotionnel. Un moment pour soi, dans
+                                une atmosphère paisible.
+                            </p>
+
+                            <p class="text-lg xl:text-xl mb-4">
+                                Les soins peuvent être un très bon complément
+                                aux soins médicaux et aux séances de
+                                psychothérapie dont ils renforcent l’effet.
+                            </p>
+                            <p class="text-lg xl:text-xl mb-4">
+                                À noter que différents soins de bien être
+                                peuvent être réalisés, ils sont généralement
+                                choisis par le praticien et adapté à chaque
+                                personne. <br />
+                                Ils peuvent être dispensés dès le plus jeune âge.
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="collapse collapse-arrow join-item border border-base-300"
+                    >
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h3
+                                class="text-xl md:text-2xl font-bold mb-4 text-left w-10/12"
+                            >
+                                Comment se deroule une séance ?
+                            </h3>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-lg xl:text-xl mb-4">
+                                Une séance peut durer 45 minutes à 1H30 selon
+                                les soins réalisés.
+                            </p>
+                            <p class="text-lg xl:text-xl mb-4">
+                                La séance commence toujours par un entretien qui
+                                est constitué d’un ensemble de questions
+                                précises permettant de recueillir des
+                                informations. Puis les soins sont réalisés.
+                                <br />Les outils peuvent varier, et sont choisis
+                                par le praticien et adaptés à chaque personne.
+                                <br />(ex : réchauffement de certaines zones du
+                                corps, travaille sur certaines zones du corps,
+                                ou points de réflexologie, etc)
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="collapse collapse-arrow join-item border border-base-300"
+                    >
+                        <input type="radio" name="my-accordion-4" />
+                        <div class="collapse-title text-xl font-medium">
+                            <h3
+                                class="text-xl md:text-2xl font-bold mb-4 text-left w-10/12"
+                            >
+                                Est-ce que le traitement peuvent remplacer un
+                                rendez-vous avec un medecin ?
+                            </h3>
+                        </div>
+                        <div class="collapse-content">
+                            <p class="text-lg xl:text-xl mb-4">
+                                Aucun diagnostique médical ne peut être fait au
+                                cabinet, il ne peut être posé que par le médecin
+                                traitant et ou les spécialistes médicaux
+                                concernés.
+                                <br />Aucun soins de bien être ne peut remplacer
+                                des soins médicaux s’il y a lieu.
+                            </p>
+                            <p class="text-lg xl:text-xl mb-4">
+                                Le praticien peut être amené à refuser une
+                                consultation si il estime que la personne doit
+                                se diriger vers son médecin pour les troubles
+                                qu’elle rencontre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</BaseLayout>
