@@ -1,15 +1,21 @@
 ---
+import { Image } from "astro:assets";
 
+import logo from "../../public/evelogo.svg";
 ---
 
 <script>
     function toggleHidden() {
         const checkbox = document.getElementById("toggleCheckbox");
         const hiddenDiv = document.getElementById("toggleDiv");
+        const hiddenLogo = document.getElementById("toggleLogo");
 
         checkbox.addEventListener("click", function () {
             hiddenDiv.classList.toggle("hidden");
             hiddenDiv.classList.toggle("flex");
+
+            hiddenLogo.classList.toggle("flex");
+            hiddenLogo.classList.toggle("hidden");
             console.log("Toggled!");
         });
 
@@ -39,15 +45,17 @@
     });
 </script>
 
-<header id="header" class="z-50 bg-base-100 px-4 opacity-90">
-    <div class="navbar justify-between p-4">
-        <div class="w-14">
-            <a href="#top">
-                <img src="/public/placeholder.svg" alt="" />
-            </a>
-        </div>
+<header id="header" class="px-4 opacity-90">
+    <div id="toggleLogo" class="w-44 absolute top-0 left-0 z-50">
+        <a href="#top">
+            <Image class="" src={logo} alt="" />
+        </a>
+    </div>
 
-        <label class="btn btn-square swap swap-rotate bg-base-100">
+    <div class="navbar justify-end p-4">
+        <label
+            class="btn btn-ghost btn-square swap swap-rotate bg-base-100 z-50"
+        >
             <!-- this hidden checkbox controls the state -->
             <input type="checkbox" id="toggleCheckbox" />
 
@@ -81,7 +89,7 @@
 </header>
 
 <div
-    class="hidden sticky top-20 w-full justify-center z-50 bg-base-200 py-8"
+    class="hidden absolute top-20 w-full flex-col items-center z-20 bg-base-100 py-8 border-b border-base-200"
     id="toggleDiv"
 >
     <nav>
@@ -115,4 +123,7 @@
             </li>
         </ul>
     </nav>
+    <div class="">
+        <Image class="h-60" src={logo} alt="" />
+    </div>
 </div>
