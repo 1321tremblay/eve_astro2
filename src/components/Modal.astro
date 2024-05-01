@@ -7,7 +7,7 @@ const { btn } = Astro.props;
     {btn}
 </button>
 <dialog id="my_modal_3" class="modal">
-    <div class="modal-box">
+    <div class="modal-box opacity-95">
         <form method="dialog">
             <button
                 class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"
@@ -17,7 +17,7 @@ const { btn } = Astro.props;
         </form>
 
         <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
-            <h2 class="mb-4 text-2xl font-bold">Pret a commencer?</h2>
+            <h2 class="mb-4 text-2xl font-thin">Pret a commencer?</h2>
             <form
                 action="https://formspree.io/f/xnqewqyr "
                 method="POST"
@@ -101,7 +101,7 @@ const { btn } = Astro.props;
                 <div class="text-center">
                     <button
                         type="submit"
-                        class="w-full bg-base-200 px-6 py-3 font-xl rounded-md sm:mb-0"
+                        class="w-full btn btn-ghost px-6 py-3 font-xl rounded-md sm:mb-0"
                     >
                         Envoyer
                     </button>

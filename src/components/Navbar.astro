@@ -23,9 +23,12 @@ import logo from "../../public/evelogo.svg";
 
         aTags.forEach(function (aTag) {
             aTag.addEventListener("click", function () {
-                checkbox.click();
-                hiddenDiv.classList.add("hidden");
-                hiddenDiv.classList.remove("flex");
+                // Check if the clicked <a> tag has ID "ignoreTag"
+                if (this.id !== "ignoreTag") {
+                    checkbox.click();
+                    hiddenDiv.classList.add("hidden");
+                    hiddenDiv.classList.remove("flex");
+                }
             });
         });
     }
@@ -47,9 +50,7 @@ import logo from "../../public/evelogo.svg";
 
 <header id="header" class="px-4 opacity-90">
     <div id="toggleLogo" class="w-44 absolute top-0 left-0 z-50">
-        <a href="#top">
-            <Image class="" src={logo} alt="" />
-        </a>
+        <Image class="" src={logo} alt="" />
     </div>
 
     <div class="navbar justify-end p-4">
@@ -93,25 +94,17 @@ import logo from "../../public/evelogo.svg";
     id="toggleDiv"
 >
     <nav>
-        <ul>
+        <ul class="flex flex-col items-center">
             <li>
                 <a class="btn btn-ghost text-lg" href="#traitements"
-                    >Traitements</a
+                    >Les techniques et traitements</a
                 >
             </li>
             <li>
-                <a class="btn btn-ghost text-lg" href="#techniques"
-                    >Techniques</a
-                >
-            </li>
-            <li>
-                <a class="btn btn-ghost text-lg" href="#bio">A propos</a>
+                <a class="btn btn-ghost text-lg" href="#bio">A propos de moi</a>
             </li>
             <li>
                 <a class="btn btn-ghost text-lg" href="#contact">Contact</a>
-            </li>
-            <li>
-                <a class="btn btn-ghost text-lg" href="#faq">F.A.Q</a>
             </li>
             <li>
                 <button

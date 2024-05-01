@@ -1,3 +1,13 @@
 ---
-const { icon, heading, text } = Astro.props;
+const { image, heading, text } = Astro.props;
 ---
+
+<div>
+    <div class="flex flex-col max-w-72 border border-secondary rounded-md m-4">
+        <img src={image} alt="" />
+        <h3 class="mb-4 px-4 pt-4 text-xl text-secondary font-thin min-h-20">
+            {heading}
+        </h3>
+        <p class="mb-4 px-4 pt-4">{text}</p>
+    </div>
+</div>
