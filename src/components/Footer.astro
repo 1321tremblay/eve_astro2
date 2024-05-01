@@ -1,0 +1,46 @@
+---
+import { Image } from "astro:assets";
+
+import logo from "../../public/evelogo.svg";
+---
+
+<div class="grid grid-cols-12 gap-6 py-8 bg-base-200">
+    <nav
+        class="col-start-1 col-span-12 md:col-span-6 max-w-2xl mx-auto flex flex-col items-center justify-center"
+    >
+        <ul class="flex flex-col items-center justify-center">
+            <li>
+                <a
+                    class="text-lg xl:text-2xl mb-2 font-thin text-secondary"
+                    href="#traitements">Les techniques et traitements</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-lg xl:text-2xl mb-2 font-thin text-secondary"
+                    href="#bio">A propos de moi</a
+                >
+            </li>
+            <li>
+                <a
+                    class="text-lg xl:text-2xl mb-2 font-thin text-secondary"
+                    href="#contact">Contact</a
+                >
+            </li>
+            <li>
+                <button
+                    class="text-lg xl:text-2xl font-thin text-secondary"
+                    onclick="my_modal_3.showModal()"
+                >
+                    Prendre RDV
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <div
+        class="col-start-2 col col-span-10 md:col-start-7 md:col-span-6 flex justify-center"
+    >
+        <Image class="w-64" src={logo} alt="logo" />
+    </div>
+</div>
