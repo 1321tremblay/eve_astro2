@@ -2,7 +2,6 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Navbar from "../components/Navbar.astro";
 import Modal from "../components/Modal.astro";
-import Card from "../components/Card.astro";
 import Footer from "../components/Footer.astro";
 
 import { Image } from "astro:assets";
@@ -10,7 +9,7 @@ import { Image } from "astro:assets";
 import logo from "../../public/evelogo.svg";
 ---
 
-<BaseLayout titre="titre">
+<BaseLayout titre="Bien-etre psy">
     <Navbar />
     <main id="top">
         <div class="grid grid-cols-12 gap-6 mb-8 md:mb-16">
@@ -39,15 +38,13 @@ import logo from "../../public/evelogo.svg";
                 class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 md:py-16 bg-base-100 z-10"
             >
                 <div class="flex flex-col w-5/6 mx-auto justify-start m-4">
-                    <h1
-                        class="text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-thin mb-4"
-                    >
+                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-thin mb-4">
                         L'accompagnement de <span class="text-secondary"
                             >votre</span
                         > bien-etre
                     </h1>
                     <p
-                        class="text-md xl:text-lg mb-4 w-5/6 font-thin text-left"
+                        class="text-lg lg:text-xl mb-4 w-5/6 font-thin text-left"
                     >
                         Découvrez comment mes méthodes douces et naturelles
                         peuvent vous aider à retrouver l'équilibre et la
@@ -55,7 +52,10 @@ import logo from "../../public/evelogo.svg";
                     </p>
                     <div class="">
                         <Modal btn="Prendre RDV" />
-                        <a id="ignoreTag" href="#more" class="btn btn-outline"
+                        <a
+                            id="ignoreTag"
+                            href="#more"
+                            class="btn btn-outline text-xl font-thin"
                             >En savoir plus</a
                         >
                     </div>
@@ -78,7 +78,7 @@ import logo from "../../public/evelogo.svg";
         <div id="traitements" class="divider"></div>
         <div class="grid grid-cols-12 gap-6 my-8 py-8 max-w-7xl mx-auto">
             <div class="col-start-1 col-span-12 text-center">
-                <h2 class="text-2xl xl:text-3xl mb-4 text-secondary font-thin">
+                <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
                     Les techniques et traitements
                 </h2>
             </div>
@@ -86,20 +86,20 @@ import logo from "../../public/evelogo.svg";
             <div
                 class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
             >
-                <p class="text-xl xl:text-2xl mb-4 w-5/6 font-thin">
+                <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin">
                     Hypnose - Hypnotherapie Ericksonienne
                 </p>
 
-                <p class="text-xl xl:text-2xl mb-4 w-5/6 font-thin">
+                <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin">
                     Accupression - Auriculotherapie
                 </p>
-                <p class="text-xl xl:text-2xl mb-4 w-5/6 font-thin">
+                <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin">
                     Reflexologie Dorsale
                 </p>
-                <p class="text-xl xl:text-2xl mb-4 w-5/6 font-thin">
+                <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin">
                     Ventouses therapeutique
                 </p>
-                <p class="text-xl xl:text-2xl w-5/6 font-thin">
+                <p class="text-xl lg:text-2xl w-5/6 font-thin">
                     Accompagnement - Suivi et therapies breves
                 </p>
             </div>
@@ -109,7 +109,7 @@ import logo from "../../public/evelogo.svg";
     <div class="divider" id="more"></div>
     <div class="grid grid-cols-12 gap-6 mt-8 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
-            <h2 class="text-2xl xl:text-3xl mb-4 text-secondary font-thin">
+            <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
                 Pourquoi faire une séance ?
             </h2>
         </div>
@@ -117,29 +117,29 @@ import logo from "../../public/evelogo.svg";
         <div
             class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
         >
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 Une séance peut être bénéfique dans de nombreuses situations et
                 apporte un bien être physique et émotionnel. Un moment pour soi,
                 dans une atmosphère paisible.
             </p>
 
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 Les soins peuvent être un très bon complément aux soins médicaux
                 et aux séances de psychothérapie dont ils renforcent l’effet.
             </p>
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 Ils vont permettront de contribuer à soulager le stress,
                 l’anxiété, les douleurs, les troubles digestifs, les troubles du
                 sommeil, les migraines, les troubles dermatologiques, les
                 dysménorrhées, les troubles de la fertilité, d’aider à mincir.
             </p>
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 Je vous propose un accompagnement lors des parcours médicalement
                 assistés (PMA) et Fécondation in vitro (FIV, inséminations
                 etc.), au cours de la grossesse, en préparation à
                 l’accouchement…
             </p>
-            <p class="text-md xl:text-lg w-5/6 font-thin">
+            <p class="text-lg lg:text-xl w-5/6 font-thin">
                 Ces séances sont très utile également dans l’accompagnement des
                 maladies lourdes, et contribuent grandement au maintien du bien
                 être de la personne. Elles favorisent un état de bien être et
@@ -157,7 +157,7 @@ import logo from "../../public/evelogo.svg";
 
     <div class="grid grid-cols-12 gap-6 mb-8 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
-            <h2 class="text-2xl xl:text-3xl mb-4 text-secondary font-thin">
+            <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
                 Comment se déroule une séance ?
             </h2>
         </div>
@@ -165,11 +165,11 @@ import logo from "../../public/evelogo.svg";
         <div
             class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
         >
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 Une séance peut durer 45 minutes à 1H30 selon les soins
                 réalisés.
             </p>
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 La séance commence toujours par un entretien qui est constitué
                 d’un ensemble de questions précises permettant de recueillir des
                 informations. Puis les soins sont réalisés.
@@ -178,14 +178,14 @@ import logo from "../../public/evelogo.svg";
                 <br />(ex : réchauffement de certaines zones du corps, travaille
                 sur certaines zones du corps, ou points de réflexologie, etc)
             </p>
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 NB: Aucun diagnostique médical ne peut être fait au cabinet, il
                 ne peut être posé que par le médecin traitant et ou les
                 spécialistes médicaux concernés.
                 <br />Aucun soins de bien être ne peut remplacer des soins
                 médicaux s’il y a lieu.
             </p>
-            <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                 Le praticien peut être amené à refuser une consultation si il
                 estime que la personne doit se diriger vers son médecin pour les
                 troubles qu’elle rencontre.
@@ -199,7 +199,7 @@ import logo from "../../public/evelogo.svg";
     <div class="divider" id="bio"></div>
     <div class="grid grid-cols-12 gap-6 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
-            <p class="text-2xl xl:text-3xl mb-4 text-secondary font-thin">
+            <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
                 A propos de moi
             </p>
         </div>
@@ -209,7 +209,7 @@ import logo from "../../public/evelogo.svg";
                 <div class="h-80 w-64 mb-4 bg-secondary">
                     <img src="" alt="" />
                 </div>
-                <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                     Évelyne Veschambre, je suis biologiste de première
                     formation. Passionnée de sciences humaines, je me suis
                     dirigée vers la psychologie. Puis, j’ai découvert un outil
@@ -227,7 +227,7 @@ import logo from "../../public/evelogo.svg";
                     mets mes compétences, expérience et outils au service des
                     « projets bébés ».
                 </p>
-                <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                     Je vous propose quelque soit l’endroit où vous êtes de
                     pouvoir profiter de l’accompagnement ciblé hypnothérapie
                     grâce à mes séances en audio mais également complétées par
@@ -235,10 +235,10 @@ import logo from "../../public/evelogo.svg";
                     consulte au cabinet à Tours (37) et au cabinet au Trois
                     Îlets (972).
                 </p>
-                <p class="text-md xl:text-lg mb-4 w-5/6 font-thin">
+                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
                     Je suis à votre écoute et je vous dis à bientôt.
                 </p>
-                <p class="text-lg xl:text-xl mb-4 w-5/6 font-thin italic">
+                <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin italic">
                     Évelyne
                 </p>
 
@@ -257,7 +257,7 @@ import logo from "../../public/evelogo.svg";
 
     <div class="grid grid-cols-12 gap-6 max-w-2xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
-            <p class="text-2xl xl:text-3xl mb-4 text-secondary font-thin">
+            <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
                 Ressources videos et entrevues
             </p>
         </div>
@@ -284,7 +284,7 @@ import logo from "../../public/evelogo.svg";
     <div class="divider" id="contact"></div>
     <div class="grid grid-cols-12 gap-6 py-8 mb-8 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
-            <p class="text-2xl xl:text-3xl mb-4 text-secondary font-thin">
+            <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
                 Contact
             </p>
         </div>
@@ -303,33 +303,33 @@ import logo from "../../public/evelogo.svg";
                 >
                     <div class="text-left">
                         <p
-                            class="text-lg xl:text-xl mb-2 font-thin text-secondary"
+                            class="text-xl lg:text-2xl mb-2 font-thin text-secondary"
                         >
                             Adresse
                         </p>
-                        <p class="text-md xl:text-lg mb-4 font-thin">
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
                             1 rue de la dorade,
                         </p>
-                        <p class="text-md xl:text-lg mb-4 font-thin">
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
                             les trois ilets,
                         </p>
-                        <p class="text-md xl:text-lg mb-4 font-thin">97231</p>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">97231</p>
 
                         <p
-                            class="text-lg xl:text-xl mb-2 font-thin text-secondary"
+                            class="text-xl lg:text-2xl mb-2 font-thin text-secondary"
                         >
                             Telephone
                         </p>
-                        <p class="text-md xl:text-lg mb-4 font-thin">
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
                             0696204415
                         </p>
 
                         <p
-                            class="text-lg xl:text-xl mb-2 font-thin text-secondary"
+                            class="text-xl lg:text-2xl mb-2 font-thin text-secondary"
                         >
                             Email
                         </p>
-                        <p class="text-md xl:text-lg mb-4 font-thin">
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
                             evelyne@bienetrepsy.com
                         </p>
                     </div>
