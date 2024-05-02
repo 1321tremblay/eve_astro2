@@ -3,13 +3,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Navbar from "../components/Navbar.astro";
 import Modal from "../components/Modal.astro";
 import Footer from "../components/Footer.astro";
-import ModalAuri from "../components/ModalAuri.astro";
-import ModalHypno from "../components/ModalHypno.astro";
-import ModalReflex from "../components/ModalReflex.astro";
-import ModalVent from "../components/ModalVent.astro";
+
 import { Image } from "astro:assets";
 
 import logo from "../../public/evelogo.svg";
+import hypno from "../../public/hypnose.jpg";
+import reflex from "../../public/reflexology.jpg";
+import auri from "../../public/auriculo.jpg";
+import vent from "../../public/ventouses.jpg";
 ---
 
 <BaseLayout titre="Bien-etre psy">
@@ -78,7 +79,7 @@ import logo from "../../public/evelogo.svg";
             </div>
         </div>
 
-        <div id="traitements" class="divider"></div>
+        <div id="traitements" class="divider mx-8"></div>
         <div class="grid grid-cols-12 gap-6 my-8 py-8 max-w-7xl mx-auto">
             <div class="col-start-1 col-span-12 text-center">
                 <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
@@ -87,20 +88,174 @@ import logo from "../../public/evelogo.svg";
             </div>
 
             <div
-                class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
+                class="col-start-1 col-span-12 flex flex-col items-center mx-8 md:mx-auto md:max-w-2xl xl:max-w-7xl"
             >
-                <ModalHypno />
-                <ModalAuri />
-                <ModalReflex />
-                <ModalVent />
-                <p class="hidden text-xl lg:text-2xl w-5/6 font-thin">
-                    Accompagnement - Suivi et therapies breves
-                </p>
+                <div class="grid grid-cols-12 gap-6 mt-8">
+                    <div
+                        class="col-start-1 col-span-12 xl:col-span-6 flex justify-center xl:justify-start"
+                    >
+                        <Image class="mb-4 rounded-md" src={hypno} alt="" />
+                    </div>
+                    <div
+                        class="col-start-1 col-span-12 xl:col-start-7 xl:col-span-6"
+                    >
+                        <h3
+                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
+                        >
+                            Hypnose - Hypnotherapie Ericksonienne
+                        </h3>
+
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            L'hypnothérapie, pratiquée depuis des siècles, a été
+                            l'objet de nombreuses recherches scientifiques. Les
+                            résultats ont révélé de multiples bienfaits pour le
+                            corps et l'esprit, pouvant contribuer au soulagement
+                            de divers troubles répertoriés par des institutions
+                            telles que l'OMS. En ciblant les processus mentaux
+                            et en utilisant des techniques spécifiques,
+                            l'hypnothérapie peut aider à surmonter des défis
+                            allant de l'anxiété et du stress à la gestion de la
+                            douleur, en passant par l'amélioration de la
+                            confiance en soi et la gestion des phobies. Selon
+                            les besoins individuels, une séance d'hypnothérapie
+                            peut favoriser la relaxation profonde, améliorer la
+                            concentration, encourager des changements de
+                            comportement positifs et même aider à libérer des
+                            traumatismes émotionnels. En somme, l'hypnothérapie
+                            offre un potentiel significatif pour le bien-être
+                            physique et émotionnel, offrant une voie vers un
+                            équilibre mental et une santé globale.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="grid grid-cols-12 gap-6 my-8">
+                    <div
+                        class="col-start-1 col-span-12 xl:hidden flex justify-center"
+                    >
+                        <Image class="mb-4 rounded-md" src={reflex} alt="" />
+                    </div>
+                    <div
+                        class="col-start-1 col-span-12 xl:col-start-1 xl:col-span-6"
+                    >
+                        <h3
+                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
+                        >
+                            La réflexologie dorsale
+                        </h3>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            Notre dos est un véritable réservoir à émotions.
+                            D’ailleurs, selon l’expression consacrée ne dit-on
+                            pas « j’en ai plein le dos » ou encore « je porte
+                            tout sur mes épaules ». Afin de libérer les points
+                            d’énergie, le praticien utilise une grande diversité
+                            de techniques précises variant selon les zones,
+                            l’âge et la constitution de la personne.
+                        </p>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            Ce n’est pas un massage et cette technique est
+                            réalisée sur une Ce soin est composé de nombreux
+                            gestes, plus ou moins profonds dans les tissus,
+                            s’effectuant avec les pouces, les doigts, les
+                            coudes, les avants bras. Le rythme des gestes peut
+                            être plus ou moins rapide.
+                        </p>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            Ce soin stimule les points d’énergie et fait
+                            circuler le sang dans les tissus, il apporte un bien
+                            être et un relâchement et peut contribuer au
+                            soulagement des douleurs et différents maux pouvant
+                            gêner le quotidien. Il est pratiqué avec des huiles
+                            végétales et des huiles essentielles bio adaptées à
+                            chacun.
+                        </p>
+                    </div>
+
+                    <div
+                        class="hidden xl:flex justify-end xl:col-start-7 col-span-6"
+                    >
+                        <Image class="mb-4 rounded-md" src={reflex} alt="" />
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="grid grid-cols-12 gap-6 my-8">
+                    <div
+                        class="col-start-1 col-span-12 xl:col-span-6 flex justify-center xl:justify-start"
+                    >
+                        <Image class="mb-4 rounded-md" src={auri} alt="" />
+                    </div>
+                    <div
+                        class="col-start-1 col-span-12 xl:col-start-7 xl:col-span-6"
+                    >
+                        <h3
+                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
+                        >
+                            L’acupression – l’auriculothérapie
+                        </h3>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            Il s’agit d’une pratique plusieurs fois millénaire,
+                            qui a fait l’objet de recherches scientifiques. Les
+                            résultats ont démontrés de nombreux effets
+                            bénéfiques sur le corps, et le maintient de la
+                            santé, pouvant contribuer au soulagement de troubles
+                            référencés entre autre par l’OMS. Il s’agit de la
+                            stimulation de points d’acupuncture, situés sur les
+                            méridiens ou en dehors de ces trajets visant à
+                            réguler l’énergie dans ces derniers.
+                        </p>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            Selon les trajets ou les zones choisies, les actions
+                            peuvent être plus ou moins larges et aller jusqu’à
+                            favoriser la régulation des cycles menstruels par
+                            exemple, ou encore stimuler la fertilité, contribuer
+                            à une digestion facile, induire un meilleur sommeil,
+                            contribuer à soulager la migraine etc.
+                        </p>
+                        <p class="text-lg lg:text-xl mb-4 font-thin">
+                            Une séance peut être bénéfique dans de nombreuses
+                            situations et apporte un bien être physique et
+                            émotionnel.
+                        </p>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="grid grid-cols-12 gap-6 my-8">
+                    <div
+                        class="col-start-1 col-span-12 xl:hidden flex justify-center rounded-md"
+                    >
+                        <Image class="mb-4 rounded-md" src={vent} alt="" />
+                    </div>
+                    <div
+                        class="col-start-1 col-span-12 xl:col-start-1 xl:col-span-6"
+                    >
+                        <h3
+                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
+                        >
+                            Les ventouses thérapeutiques
+                        </h3>
+                        <p class="text-lg lg:text-xl font-thin">
+                            Les ventouses étaient autrefois très employées en
+                            Occident, entre autres pour drainer les abcès ou
+                            pour traiter les maladies pulmonaires. <br />
+                            Dans le bien être, elles sont souvent utilisées pour
+                            contribuer à soulager les douleurs, les problèmes de
+                            peau, les oedèmes, produire de la détente musculaire
+                            etc <br />
+                            Elles sont alors positionnée sur des zones choisies,
+                            plus ou moins longtemps selon l’effet souhaité.
+                        </p>
+                    </div>
+                    <div
+                        class="hidden xl:flex justify-end lg:col-start-7 col-span-6"
+                    >
+                        <Image class="mb-4 rounded-md" src={vent} alt="" />
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <div class="divider" id="more"></div>
+    <div class="divider mx-8" id="more"></div>
     <div class="grid grid-cols-12 gap-6 mt-8 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
             <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
@@ -190,7 +345,7 @@ import logo from "../../public/evelogo.svg";
         </div>
     </div>
 
-    <div class="divider" id="bio"></div>
+    <div class="divider mx-8" id="bio"></div>
     <div class="grid grid-cols-12 gap-6 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
             <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
@@ -252,7 +407,7 @@ import logo from "../../public/evelogo.svg";
         </div>
     </div>
 
-    <div class="divider"></div>
+    <div class="divider mx-8"></div>
 
     <div class="grid grid-cols-12 gap-6 max-w-2xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
@@ -280,7 +435,7 @@ import logo from "../../public/evelogo.svg";
         </div>
     </div>
 
-    <div class="divider" id="contact"></div>
+    <div class="divider mx-8" id="contact"></div>
     <div class="grid grid-cols-12 gap-6 py-8 mb-8 max-w-7xl mx-auto">
         <div class="col-start-1 col-span-12 text-center">
             <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
