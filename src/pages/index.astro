@@ -14,483 +14,563 @@ import vent from "../../public/ventouses.jpg";
 ---
 
 <BaseLayout title="Bien-être psy avec Évelyne Veschambre">
-    <Navbar />
-    <main id="top">
-        <div class="grid grid-cols-12 gap-6 mb-8 md:mb-16">
-            <div
-                class="col-start-1 col-span-12 md:col-start-1 md:col-span-6 h-96 md:h-full"
-                style="background-image: url(/eve-bg01.jpg);
+  <Navbar />
+  <main id="top">
+    <div class="grid grid-cols-12 gap-6 mb-8 md:mb-16">
+      <div
+        class="col-start-1 col-span-12 md:col-start-1 md:col-span-6 h-96 md:h-full"
+        style="background-image: url(/eve-bg01.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: left;"
-            >
-            </div>
-            <div class="col-start-1 col-span-12 md:hidden relative">
-                <svg
-                    class="absolute bottom-5"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                    ><path
-                        fill="#FDFAF6"
-                        fill-opacity="1"
-                        d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,165.3C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-                    ></path></svg
-                >
-            </div>
-
-            <div
-                class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 md:py-16 bg-base-100 z-10"
-            >
-                <div class="flex flex-col w-5/6 mx-auto justify-start m-4">
-                    <h1 class="text-4xl lg:text-5xl xl:text-6xl font-thin mb-4">
-                        L'accompagnement de <span class="text-secondary"
-                            >votre</span
-                        > bien-etre
-                    </h1>
-                    <p
-                        class="text-lg lg:text-xl mb-4 w-5/6 font-thin text-left"
-                    >
-                        Découvrez comment mes méthodes douces et naturelles
-                        peuvent vous aider à retrouver l'équilibre et la
-                        sérénité dans votre vie quotidienne.
-                    </p>
-                    <div class="">
-                        <Modal btn="Prendre RDV" />
-                        <a
-                            id="ignoreTag"
-                            href="#more"
-                            class="btn btn-outline text-xl font-thin"
-                            >En savoir plus</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="col-start-1 col-span-12 relative">
-                <svg
-                    class="hidden md:block absolute bottom-0 xl:-bottom-10 left-0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1440 320"
-                    ><path
-                        fill="#FDFAF6"
-                        fill-opacity="1"
-                        d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,165.3C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-                    ></path></svg
-                >
-            </div>
-        </div>
-
-        <div id="traitements" class="divider mx-8"></div>
-        <div class="grid grid-cols-12 gap-6 my-8 py-8 max-w-7xl mx-auto">
-            <div class="col-start-1 col-span-12 text-center">
-                <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
-                    Les techniques et traitements
-                </h2>
-            </div>
-
-            <div
-                class="col-start-1 col-span-12 flex flex-col items-center mx-8 md:mx-auto md:max-w-2xl xl:max-w-7xl"
-            >
-                <div class="grid grid-cols-12 gap-6 mt-8">
-                    <div
-                        class="col-start-1 col-span-12 xl:col-span-6 flex justify-center xl:justify-start"
-                    >
-                        <Image class="mb-4 rounded-md" src={hypno} alt="" />
-                    </div>
-                    <div
-                        class="col-start-1 col-span-12 xl:col-start-7 xl:col-span-6"
-                    >
-                        <h3
-                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
-                        >
-                            Hypnose - Hypnotherapie Éricksonienne
-                        </h3>
-
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            L'hypnothérapie, pratiquée depuis des siècles, a été
-                            l'objet de nombreuses recherches scientifiques. Les
-                            résultats ont révélé de multiples bienfaits pour le
-                            corps et l'esprit, pouvant contribuer au soulagement
-                            de divers troubles répertoriés par des institutions
-                            telles que l'OMS. En ciblant les processus mentaux
-                            et en utilisant des techniques spécifiques,
-                            l'hypnothérapie peut aider à surmonter des défis
-                            allant de l'anxiété et du stress à la gestion de la
-                            douleur, en passant par l'amélioration de la
-                            confiance en soi et la gestion des phobies. Selon
-                            les besoins individuels, une séance d'hypnothérapie
-                            peut favoriser la relaxation profonde, améliorer la
-                            concentration, encourager des changements de
-                            comportement positifs et même aider à libérer des
-                            traumatismes émotionnels. En somme, l'hypnothérapie
-                            offre un potentiel significatif pour le bien-être
-                            physique et émotionnel, offrant une voie vers un
-                            équilibre mental et une santé globale.
-                        </p>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="grid grid-cols-12 gap-6 my-8">
-                    <div
-                        class="col-start-1 col-span-12 xl:hidden flex justify-center"
-                    >
-                        <Image class="mb-4 rounded-md" src={reflex} alt="" />
-                    </div>
-                    <div
-                        class="col-start-1 col-span-12 xl:col-start-1 xl:col-span-6"
-                    >
-                        <h3
-                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
-                        >
-                            La réflexologie dorsale
-                        </h3>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            Notre dos est un véritable réservoir à émotions.
-                            D’ailleurs, selon l’expression consacrée ne dit-on
-                            pas « j’en ai plein le dos » ou encore « je porte
-                            tout sur mes épaules ». Afin de libérer les points
-                            d’énergie, le praticien utilise une grande diversité
-                            de techniques précises variant selon les zones,
-                            l’âge et la constitution de la personne.
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            Ce n’est pas un massage et cette technique est
-                            réalisée sur une Ce soin est composé de nombreux
-                            gestes, plus ou moins profonds dans les tissus,
-                            s’effectuant avec les pouces, les doigts, les
-                            coudes, les avants bras. Le rythme des gestes peut
-                            être plus ou moins rapide.
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            Ce soin stimule les points d’énergie et fait
-                            circuler le sang dans les tissus, il apporte un bien
-                            être et un relâchement et peut contribuer au
-                            soulagement des douleurs et différents maux pouvant
-                            gêner le quotidien. Il est pratiqué avec des huiles
-                            végétales et des huiles essentielles bio adaptées à
-                            chacun.
-                        </p>
-                    </div>
-
-                    <div
-                        class="hidden xl:flex justify-end xl:col-start-7 col-span-6"
-                    >
-                        <Image class="mb-4 rounded-md" src={reflex} alt="" />
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="grid grid-cols-12 gap-6 my-8">
-                    <div
-                        class="col-start-1 col-span-12 xl:col-span-6 flex justify-center xl:justify-start"
-                    >
-                        <Image class="mb-4 rounded-md" src={auri} alt="" />
-                    </div>
-                    <div
-                        class="col-start-1 col-span-12 xl:col-start-7 xl:col-span-6"
-                    >
-                        <h3
-                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
-                        >
-                            L’acupression – l’auriculothérapie
-                        </h3>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            Il s’agit d’une pratique plusieurs fois millénaire,
-                            qui a fait l’objet de recherches scientifiques. Les
-                            résultats ont démontrés de nombreux effets
-                            bénéfiques sur le corps, et le maintient de la
-                            santé, pouvant contribuer au soulagement de troubles
-                            référencés entre autre par l’OMS. Il s’agit de la
-                            stimulation de points d’acupuncture, situés sur les
-                            méridiens ou en dehors de ces trajets visant à
-                            réguler l’énergie dans ces derniers.
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            Selon les trajets ou les zones choisies, les actions
-                            peuvent être plus ou moins larges et aller jusqu’à
-                            favoriser la régulation des cycles menstruels par
-                            exemple, ou encore stimuler la fertilité, contribuer
-                            à une digestion facile, induire un meilleur sommeil,
-                            contribuer à soulager la migraine etc.
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            Une séance peut être bénéfique dans de nombreuses
-                            situations et apporte un bien être physique et
-                            émotionnel.
-                        </p>
-                    </div>
-                </div>
-                <div class="divider"></div>
-                <div class="grid grid-cols-12 gap-6 my-8">
-                    <div
-                        class="col-start-1 col-span-12 xl:hidden flex justify-center rounded-md"
-                    >
-                        <Image class="mb-4 rounded-md" src={vent} alt="" />
-                    </div>
-                    <div
-                        class="col-start-1 col-span-12 xl:col-start-1 xl:col-span-6"
-                    >
-                        <h3
-                            class="text-2xl lg:text-3xl mb-4 text-secondary font-thin"
-                        >
-                            Les ventouses thérapeutiques
-                        </h3>
-                        <p class="text-lg lg:text-xl font-thin">
-                            Les ventouses étaient autrefois très employées en
-                            Occident, entre autres pour drainer les abcès ou
-                            pour traiter les maladies pulmonaires. <br />
-                            Dans le bien être, elles sont souvent utilisées pour
-                            contribuer à soulager les douleurs, les problèmes de
-                            peau, les oedèmes, produire de la détente musculaire
-                            etc <br />
-                            Elles sont alors positionnée sur des zones choisies,
-                            plus ou moins longtemps selon l’effet souhaité.
-                        </p>
-                    </div>
-                    <div
-                        class="hidden xl:flex justify-end lg:col-start-7 col-span-6"
-                    >
-                        <Image class="mb-4 rounded-md" src={vent} alt="" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <div class="divider mx-8" id="more"></div>
-    <div class="grid grid-cols-12 gap-6 mt-8 max-w-7xl mx-auto">
-        <div class="col-start-1 col-span-12 text-center">
-            <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
-                Pourquoi faire une séance ?
-            </h2>
-        </div>
-
-        <div
-            class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
+      >
+      </div>
+      <div class="col-start-1 col-span-12 md:hidden relative">
+        <svg
+          class="absolute bottom-5"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          ><path
+            fill="#FDFAF6"
+            fill-opacity="1"
+            d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,165.3C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path></svg
         >
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                Une séance peut être bénéfique dans de nombreuses situations et
-                apporte un bien être physique et émotionnel. Un moment pour soi,
-                dans une atmosphère paisible.
-            </p>
+      </div>
 
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                Les soins peuvent être un très bon complément aux soins médicaux
-                et aux séances de psychothérapie dont ils renforcent l’effet.
-            </p>
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                Ils vont permettront de contribuer à soulager le stress,
-                l’anxiété, les douleurs, les troubles digestifs, les troubles du
-                sommeil, les migraines, les troubles dermatologiques, les
-                dysménorrhées, les troubles de la fertilité, d’aider à mincir.
-            </p>
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                Je vous propose un accompagnement lors des parcours médicalement
-                assistés (PMA) et Fécondation in vitro (FIV, inséminations
-                etc.), au cours de la grossesse, en préparation à
-                l’accouchement…
-            </p>
-            <p class="text-lg lg:text-xl w-5/6 font-thin">
-                Ces séances sont très utile également dans l’accompagnement des
-                maladies lourdes, et contribuent grandement au maintien du bien
-                être de la personne. Elles favorisent un état de bien être et
-                d’apaisement dans un monde moderne rapide et parfois épuisant
-                moralement et physiquement.
-            </p>
+      <div
+        class="col-start-1 col-span-12 md:col-start-7 md:col-span-6 md:py-16 bg-base-100 z-10"
+      >
+        <div class="flex flex-col w-5/6 mx-auto justify-start m-4">
+          <h1 class="text-4xl lg:text-5xl xl:text-6xl font-thin mb-4">
+            L'accompagnement de <span class="text-secondary">votre</span> bien-etre
+          </h1>
+          <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin text-left">
+            Découvrez comment mes méthodes douces et naturelles peuvent vous
+            aider à retrouver l'équilibre et la sérénité dans votre vie
+            quotidienne.
+          </p>
+          <div class="">
+            <Modal btn="Prendre RDV" />
+            <a
+              id="ignoreTag"
+              href="#more"
+              class="btn btn-outline text-xl font-thin">En savoir plus</a
+            >
+          </div>
         </div>
-    </div>
-
-    <div class="grid grid-cols-12 gap-6">
-        <div class="col-start-2 col col-span-10 md:col-start-5 md:col-span-4">
-            <Image src={logo} alt="logo" />
-        </div>
-    </div>
-
-    <div class="grid grid-cols-12 gap-6 mb-8 max-w-7xl mx-auto">
-        <div class="col-start-1 col-span-12 text-center">
-            <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
-                Comment se déroule une séance ?
-            </h2>
-        </div>
-
-        <div
-            class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
+      </div>
+      <div class="col-start-1 col-span-12 relative">
+        <svg
+          class="hidden md:block absolute bottom-0 xl:-bottom-10 left-0"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          ><path
+            fill="#FDFAF6"
+            fill-opacity="1"
+            d="M0,160L80,181.3C160,203,320,245,480,245.3C640,245,800,203,960,165.3C1120,128,1280,96,1360,80L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path></svg
         >
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                Une séance peut durer 45 minutes à 1H30 selon les soins
-                réalisés.
-            </p>
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                La séance commence toujours par un entretien qui est constitué
-                d’un ensemble de questions précises permettant de recueillir des
-                informations. Puis les soins sont réalisés.
-                <br />Les outils peuvent varier, et sont choisis par le
-                praticien et adaptés à chaque personne.
-                <br />(ex : réchauffement de certaines zones du corps, travaille
-                sur certaines zones du corps, ou points de réflexologie, etc)
-            </p>
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                NB: Aucun diagnostique médical ne peut être fait au cabinet, il
-                ne peut être posé que par le médecin traitant et ou les
-                spécialistes médicaux concernés.
-                <br />Aucun soins de bien être ne peut remplacer des soins
-                médicaux s’il y a lieu.
-            </p>
-            <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                Le praticien peut être amené à refuser une consultation si il
-                estime que la personne doit se diriger vers son médecin pour les
-                troubles qu’elle rencontre.
-            </p>
-
-            <div class="col-start-1 col-span-12 lg:col-start-7 lg:col-span-6">
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="divider mx-8" id="bio"></div>
-    <div class="grid grid-cols-12 gap-6 max-w-7xl mx-auto">
-        <div class="col-start-1 col-span-12 text-center">
-            <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
-                A propos de moi
+    <div id="traitements" class="divider mx-8"></div>
+    <div class="grid grid-cols-12 gap-6 my-8 py-8 max-w-7xl mx-auto">
+      <div class="col-start-1 col-span-12 text-center">
+        <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
+          Les techniques et traitements
+        </h2>
+      </div>
+
+      <div
+        class="col-start-1 col-span-12 flex flex-col items-center mx-8 md:mx-auto md:max-w-2xl xl:max-w-7xl"
+      >
+        <div class="grid grid-cols-12 gap-6 mt-8">
+          <div class="col-start-1 col-span-12">
+            <h3 class="text-2xl lg:text-3xl mb-4 text-secondary font-thin">
+              Les thérapies brèves
+            </h3>
+
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              sont une approche psychothérapeutique efficace qui se concentre
+              sur des solutions rapides et sur la résolution rapide des
+              problèmes. Contrairement aux thérapies traditionnelles qui peuvent
+              durer des mois voire des années, les thérapies brèves visent à
+              obtenir des résultats tangibles en un nombre limité de séances.
+              Cette approche repose sur le principe que le changement peut se
+              produire rapidement une fois que le client est aidé à identifier
+              et à modifier ses schémas de pensée et de comportement
+              problématiques.
             </p>
-        </div>
-
-        <div class="col-start-1 col-span-12 gap-6 max-w-7xl mx-auto">
-            <div class="flex flex-col items-center mx-auto md:max-w-2xl">
-                <div class="h-80 w-64 mb-4 bg-secondary">
-                    <img src="" alt="" />
-                </div>
-                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                    Évelyne Veschambre, je suis biologiste de première
-                    formation. Passionnée de sciences humaines, je me suis
-                    dirigée vers la psychologie. Puis, j’ai découvert un outil
-                    extraordinaire : l’hypnose thérapeutique.
-                </p>
-                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                    Certifiée par la Société Française d’Hypnose (SFH) et
-                    connaissant le parcours de procréation médicalement assisté
-                    (PMA ou AMP) personnellement, j’exerce dans ce domaine
-                    depuis bientôt 15 ans.
-                </p>
-                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                    Je travaille en étroite collaboration avec des
-                    professionnels de la fertilité médicaux et paramédicaux.
-                    Nous avons ensemble mis au point un accompagnement
-                    spécifique et complet, adapté à chaque profil. Enfin, je me
-                    suis formée aux techniques de la médecine traditionnelle
-                    chinoise (MTC), ce qui a révolutionné ma pratique.
-                    Psychothérapeute, praticienne en MTC et hypnothérapeute, je
-                    mets mes compétences, expérience et outils au service des
-                    « projets bébés ».
-                </p>
-                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                    Je vous propose quelque soit l’endroit où vous êtes de
-                    pouvoir profiter de l’accompagnement ciblé hypnothérapie
-                    grâce à mes séances en audio mais également complétées par
-                    un suivi en visio. Si vous souhaitez me rencontrer, je
-                    consulte au cabinet à Tours (37) et au cabinet au Trois
-                    Îlets (972).
-                </p>
-                <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
-                    Je suis à votre écoute et je vous dis à bientôt.
-                </p>
-                <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin italic">
-                    Évelyne
-                </p>
-
-                <div></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="grid grid-cols-12 gap-6">
-        <div class="col-start-2 col col-span-10 md:col-start-5 md:col-span-4">
-            <Image src={logo} alt="logo" />
-        </div>
-    </div>
-
-    <div class="divider mx-8"></div>
-
-    <div class="grid grid-cols-12 gap-6 max-w-2xl mx-auto">
-        <div class="col-start-1 col-span-12 text-center">
-            <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
-                Ressources videos et entrevues
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Les thérapies brèves s'appuient sur diverses techniques telles que
+              la thérapie cognitivo- comportementale, l'hypnose, la
+              programmation neurolinguistique (PNL) et la thérapie orientée vers
+              les solutions. Ces approches sont axées sur le présent et sur les
+              objectifs concrets à atteindre, plutôt que sur l'exploration
+              prolongée du passé du client. Les thérapeutes travaillent en
+              collaboration avec les clients pour les aider à identifier leurs
+              objectifs, à développer des stratégies pratiques et à mettre en
+              œuvre des changements positifs dans leur vie.
             </p>
-        </div>
-
-        <div class="col-start-1 col-span-12">
-            <div class="">
-                <div
-                    style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"
-                >
-                    <iframe
-                        style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"
-                        src="https://www.dailymotion.com/embed/video/x8sr8qo"
-                        width="100%"
-                        height="100%"
-                        allowfullscreen
-                        title="Dailymotion Video Player"
-                    >
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="divider mx-8" id="contact"></div>
-    <div class="grid grid-cols-12 gap-6 py-8 mb-8 max-w-7xl mx-auto">
-        <div class="col-start-1 col-span-12 text-center">
-            <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
-                Contact
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Les thérapies brèves sont particulièrement adaptées pour traiter
+              des problèmes spécifiques tels que les phobies, les traumatismes
+              ponctuels, les troubles anxieux, les habitudes compulsives, les
+              problèmes de relation, les troubles alimentaires et bien 'autres
+              encore. Grâce à une approche ciblée et structurée, les clients
+              peuvent souvent constater des améliorations significatives en
+              quelques séances seulement.
             </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              En résumé, les thérapies brèves offrent une approche pragmatique
+              et efficace pour aider les individus à surmonter rapidement leurs
+              difficultés et à atteindre leurs objectifs. En mettant
+              l&#39;accent sur les solutions et les changements concrets, ces
+              thérapies offrent une alternative précieuse aux approches
+              traditionnelles plus longues et peuvent constituer une option
+              adaptée pour ceux qui cherchent des résultats rapides et durables.
+            </p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="grid grid-cols-12 gap-6 mt-8">
+          <div
+            class="col-start-1 col-span-12 xl:col-span-6 flex justify-center xl:justify-start"
+          >
+            <Image class="mb-4 rounded-md" src={hypno} alt="" />
+          </div>
+          <div class="col-start-1 col-span-12 xl:col-start-7 xl:col-span-6">
+            <h3 class="text-2xl lg:text-3xl mb-4 text-secondary font-thin">
+              Hypnose - Hypnotherapie Éricksonienne
+            </h3>
+
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              L'hypnothérapie, pratiquée depuis des siècles, a été l'objet de
+              nombreuses recherches scientifiques. Les résultats ont révélé de
+              multiples bienfaits pour le corps et l'esprit, pouvant contribuer
+              au soulagement de divers troubles répertoriés par des institutions
+              telles que l'OMS. En ciblant les processus mentaux et en utilisant
+              des techniques spécifiques, l'hypnothérapie peut aider à surmonter
+              des défis allant de l'anxiété et du stress à la gestion de la
+              douleur, en passant par l'amélioration de la confiance en soi et
+              la gestion des phobies. Selon les besoins individuels, une séance
+              d'hypnothérapie peut favoriser la relaxation profonde, améliorer
+              la concentration, encourager des changements de comportement
+              positifs et même aider à libérer des traumatismes émotionnels. En
+              somme, l'hypnothérapie offre un potentiel significatif pour le
+              bien-être physique et émotionnel, offrant une voie vers un
+              équilibre mental et une santé globale.
+            </p>
+          </div>
         </div>
 
-        <div class="col-start-1 col-span-12 max-w-2xl mx-auto">
-            <div class="w-96 border-2 border-base-300 rounded-md">
-                <iframe
-                    class="w-full h-96"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3862.010368716898!2d-61.06582242489493!3d14.541399585938024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1711640924601!5m2!1sfr!2sca"
-                    style="border:0;"
-                    allowfullscreen=""
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div
-                    class="rounded flex flex-col justify-center items-center my-4"
-                >
-                    <div class="text-left">
-                        <p
-                            class="text-xl lg:text-2xl mb-2 font-thin text-secondary"
-                        >
-                            Adresse
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            1 rue de la dorade,
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            les trois ilets,
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">97231</p>
+        <div class="grid grid-cols-12 gap-6 mt-8">
+          <div class="col-start-1 col-span-12">
+            <h3 class="text-2xl lg:text-3xl mb-4 text-secondary font-thin">
+              EMDR
+            </h3>
 
-                        <p
-                            class="text-xl lg:text-2xl mb-2 font-thin text-secondary"
-                        >
-                            Téléphone
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            0696204415
-                        </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Les initiales EMDR signifient, en anglais, eye movement
+              desensitization and reprocessing, soit : “désensibilisation et
+              retraitement par les mouvements oculaires” en français.
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Cette thérapie se pratique sur plusieurs séances auprès d’un
+              professionnel formé. Durant celles-ci, le thérapeute passe ses
+              doigts devant vos yeux afin que vous les suiviez du regard, mais
+              peut aussi vous proposer des stimulations auditives et tactiles
+              sur les mains par exemple.
+            </p>
+            <h4 class="text-xl lg:text-2xl mb-4 font-thin text-secondary">
+              Quels sont les troubles que l’EMDR permet de soigner ?
+            </h4>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Si la thérapie EMDR récolte de nombreux avis positifs, c’est bien
+              parce qu’elle permet à de nombreuses personnes, de venir à bout de
+              leurs troubles psychologiques. Si elle permet de soigner les
+              traumatismes psychiques, les chocs émotionnels, ou encore le
+              deuil, elle permet également de guérir tous les troubles qui
+              découlent de ces derniers comme :
+            </p>
+            <ul class="text-lg lg:text-xl mb-4 font-thin">
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Les irritabilités
+              </li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">Les angoisses</li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Les cauchemars et terreurs nocturnes
+              </li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Les états dépressifs
+              </li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">La somatisation</li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Les comportements violents
+              </li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                La tendance à l’isolement
+              </li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Les troubles du comportement alimentaire
+              </li>
+            </ul>
+            <h4 class="text-xl lg:text-2xl mb-4 font-thin text-secondary">
+              Une séance de préparation
+            </h4>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              La thérapie EMDR possède un effet relativement important sur votre
+              psychisme. Il est donc important d’établir un ou des entretiens
+              préliminaires avec le thérapeute afin de :
+            </p>
+            <ul class="text-lg lg:text-xl mb-4 font-thin">
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Identifier avec lui la problématique responsable de vos
+                troubles qui peut être solutionnée via l’EMDR.
+              </li>
 
-                        <p
-                            class="text-xl lg:text-2xl mb-2 font-thin text-secondary"
-                        >
-                            Email
-                        </p>
-                        <p class="text-lg lg:text-xl mb-4 font-thin">
-                            evelyne@bienetrepsy.com
-                        </p>
-                    </div>
-                </div>
-            </div>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Construire une relation de confiance afin que la thérapie se
+                passe au mieux.
+              </li>
+              <li class="text-lg lg:text-xl mb-4 font-thin">
+                Mettre en place le processus avec les outils psychocorporels qui
+                peuvent être utilisés au cours des séances pour stabiliser vos
+                émotions.
+              </li>
+            </ul>
+            <h4 class="text-xl lg:text-2xl mb-4 font-thin text-secondary">
+              L’EMDR : un traitement adapté
+            </h4>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              En début de séance, le thérapeute vous demande de vous concentrer
+              sur le souvenir en question qui génère un traumatisme chez vous,
+              tout en vous remémorant les stimulis sensoriels perturbant comme
+              les images, les bruits, les odeurs, et les pensées négatives que
+              vous y associez. Le processus conscient peut alors commencer.
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Le thérapeute pratique alors des séries de stimulations
+              bilatérales rapides et alternées entre lesquelles vous devrez
+              exprimer ce qui vous vient à l’esprit. Il continue ensuite ce
+              processus jusqu’à ce que le souvenir ne vous perturbe plus, puis
+              il vous aide à l’associer à une pensée constructive et dénuée de
+              négativité.
+            </p>
+          </div>
         </div>
+
+        <div class="divider"></div>
+        <div class="grid grid-cols-12 gap-6 my-8">
+          <div class="col-start-1 col-span-12 xl:hidden flex justify-center">
+            <Image class="mb-4 rounded-md" src={reflex} alt="" />
+          </div>
+          <div class="col-start-1 col-span-12 xl:col-start-1 xl:col-span-6">
+            <h3 class="text-2xl lg:text-3xl mb-4 text-secondary font-thin">
+              La réflexologie dorsale
+            </h3>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Notre dos est un véritable réservoir à émotions. D’ailleurs, selon
+              l’expression consacrée ne dit-on pas « j’en ai plein le dos » ou
+              encore « je porte tout sur mes épaules ». Afin de libérer les
+              points d’énergie, le praticien utilise une grande diversité de
+              techniques précises variant selon les zones, l’âge et la
+              constitution de la personne.
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Ce n’est pas un massage et cette technique est réalisée sur une Ce
+              soin est composé de nombreux gestes, plus ou moins profonds dans
+              les tissus, s’effectuant avec les pouces, les doigts, les coudes,
+              les avants bras. Le rythme des gestes peut être plus ou moins
+              rapide.
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Ce soin stimule les points d’énergie et fait circuler le sang dans
+              les tissus, il apporte un bien être et un relâchement et peut
+              contribuer au soulagement des douleurs et différents maux pouvant
+              gêner le quotidien. Il est pratiqué avec des huiles végétales et
+              des huiles essentielles bio adaptées à chacun.
+            </p>
+          </div>
+
+          <div class="hidden xl:flex justify-end xl:col-start-7 col-span-6">
+            <Image class="mb-4 rounded-md" src={reflex} alt="" />
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="grid grid-cols-12 gap-6 my-8">
+          <div
+            class="col-start-1 col-span-12 xl:col-span-6 flex justify-center xl:justify-start"
+          >
+            <Image class="mb-4 rounded-md" src={auri} alt="" />
+          </div>
+          <div class="col-start-1 col-span-12 xl:col-start-7 xl:col-span-6">
+            <h3 class="text-2xl lg:text-3xl mb-4 text-secondary font-thin">
+              L’acupression – l’auriculothérapie
+            </h3>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Il s’agit d’une pratique plusieurs fois millénaire, qui a fait
+              l’objet de recherches scientifiques. Les résultats ont démontrés
+              de nombreux effets bénéfiques sur le corps, et le maintient de la
+              santé, pouvant contribuer au soulagement de troubles référencés
+              entre autre par l’OMS. Il s’agit de la stimulation de points
+              d’acupuncture, situés sur les méridiens ou en dehors de ces
+              trajets visant à réguler l’énergie dans ces derniers.
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Selon les trajets ou les zones choisies, les actions peuvent être
+              plus ou moins larges et aller jusqu’à favoriser la régulation des
+              cycles menstruels par exemple, ou encore stimuler la fertilité,
+              contribuer à une digestion facile, induire un meilleur sommeil,
+              contribuer à soulager la migraine etc.
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              Une séance peut être bénéfique dans de nombreuses situations et
+              apporte un bien être physique et émotionnel.
+            </p>
+          </div>
+        </div>
+        <div class="divider"></div>
+        <div class="grid grid-cols-12 gap-6 my-8">
+          <div
+            class="col-start-1 col-span-12 xl:hidden flex justify-center rounded-md"
+          >
+            <Image class="mb-4 rounded-md" src={vent} alt="" />
+          </div>
+          <div class="col-start-1 col-span-12 xl:col-start-1 xl:col-span-6">
+            <h3 class="text-2xl lg:text-3xl mb-4 text-secondary font-thin">
+              Les ventouses thérapeutiques
+            </h3>
+            <p class="text-lg lg:text-xl font-thin">
+              Les ventouses étaient autrefois très employées en Occident, entre
+              autres pour drainer les abcès ou pour traiter les maladies
+              pulmonaires. <br />
+              Dans le bien être, elles sont souvent utilisées pour contribuer à soulager
+              les douleurs, les problèmes de peau, les oedèmes, produire de la détente
+              musculaire etc <br />
+              Elles sont alors positionnée sur des zones choisies, plus ou moins
+              longtemps selon l’effet souhaité.
+            </p>
+          </div>
+          <div class="hidden xl:flex justify-end lg:col-start-7 col-span-6">
+            <Image class="mb-4 rounded-md" src={vent} alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="divider mx-8" id="more"></div>
+  <div class="grid grid-cols-12 gap-6 mt-8 max-w-7xl mx-auto">
+    <div class="col-start-1 col-span-12 text-center">
+      <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
+        Pourquoi faire une séance ?
+      </h2>
     </div>
 
-    <Footer />
+    <div
+      class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
+    >
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        Une séance peut être bénéfique dans de nombreuses situations et apporte
+        un bien être physique et émotionnel. Un moment pour soi, dans une
+        atmosphère paisible.
+      </p>
+
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        Les soins peuvent être un très bon complément aux soins médicaux et aux
+        séances de psychothérapie dont ils renforcent l’effet.
+      </p>
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        Ils vont permettront de contribuer à soulager le stress, l’anxiété, les
+        douleurs, les troubles digestifs, les troubles du sommeil, les
+        migraines, les troubles dermatologiques, les dysménorrhées, les troubles
+        de la fertilité, d’aider à mincir.
+      </p>
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        Je vous propose un accompagnement lors des parcours médicalement
+        assistés (PMA) et Fécondation in vitro (FIV, inséminations etc.), au
+        cours de la grossesse, en préparation à l’accouchement…
+      </p>
+      <p class="text-lg lg:text-xl w-5/6 font-thin">
+        Ces séances sont très utile également dans l’accompagnement des maladies
+        lourdes, et contribuent grandement au maintien du bien être de la
+        personne. Elles favorisent un état de bien être et d’apaisement dans un
+        monde moderne rapide et parfois épuisant moralement et physiquement.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-12 gap-6">
+    <div class="col-start-2 col col-span-10 md:col-start-5 md:col-span-4">
+      <Image src={logo} alt="logo" />
+    </div>
+  </div>
+
+  <div class="grid grid-cols-12 gap-6 mb-8 max-w-7xl mx-auto">
+    <div class="col-start-1 col-span-12 text-center">
+      <h2 class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
+        Comment se déroule une séance ?
+      </h2>
+    </div>
+
+    <div
+      class="col-start-1 col-span-12 flex flex-col items-center mx-auto md:max-w-2xl"
+    >
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        Une séance peut durer 45 minutes à 1H30 selon les soins réalisés.
+      </p>
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        La séance commence toujours par un entretien qui est constitué d’un
+        ensemble de questions précises permettant de recueillir des
+        informations. Puis les soins sont réalisés.
+        <br />Les outils peuvent varier, et sont choisis par le praticien et
+        adaptés à chaque personne.
+        <br />(ex : réchauffement de certaines zones du corps, travaille sur
+        certaines zones du corps, ou points de réflexologie, etc)
+      </p>
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        NB: Aucun diagnostique médical ne peut être fait au cabinet, il ne peut
+        être posé que par le médecin traitant et ou les spécialistes médicaux
+        concernés.
+        <br />Aucun soins de bien être ne peut remplacer des soins médicaux s’il
+        y a lieu.
+      </p>
+      <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+        Le praticien peut être amené à refuser une consultation si il estime que
+        la personne doit se diriger vers son médecin pour les troubles qu’elle
+        rencontre.
+      </p>
+
+      <div class="col-start-1 col-span-12 lg:col-start-7 lg:col-span-6"></div>
+    </div>
+  </div>
+
+  <div class="divider mx-8" id="bio"></div>
+  <div class="grid grid-cols-12 gap-6 max-w-7xl mx-auto">
+    <div class="col-start-1 col-span-12 text-center">
+      <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
+        A propos de moi
+      </p>
+    </div>
+
+    <div class="col-start-1 col-span-12 gap-6 max-w-7xl mx-auto">
+      <div class="flex flex-col items-center mx-auto md:max-w-2xl">
+        <div class="h-80 w-64 mb-4 bg-secondary">
+          <img src="" alt="" />
+        </div>
+        <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+          Évelyne Veschambre, je suis biologiste de première formation.
+          Passionnée de sciences humaines, je me suis dirigée vers la
+          psychologie. Puis, j’ai découvert un outil extraordinaire : l’hypnose
+          thérapeutique.
+        </p>
+        <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+          Certifiée par la Société Française d’Hypnose (SFH) et connaissant le
+          parcours de procréation médicalement assisté (PMA ou AMP)
+          personnellement, j’exerce dans ce domaine depuis bientôt 15 ans.
+        </p>
+        <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+          Je travaille en étroite collaboration avec des professionnels de la
+          fertilité médicaux et paramédicaux. Nous avons ensemble mis au point
+          un accompagnement spécifique et complet, adapté à chaque profil.
+          Enfin, je me suis formée aux techniques de la médecine traditionnelle
+          chinoise (MTC), ce qui a révolutionné ma pratique. Psychothérapeute,
+          praticienne en MTC et hypnothérapeute, je mets mes compétences,
+          expérience et outils au service des « projets bébés ».
+        </p>
+        <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+          Je vous propose quelque soit l’endroit où vous êtes de pouvoir
+          profiter de l’accompagnement ciblé hypnothérapie grâce à mes séances
+          en audio mais également complétées par un suivi en visio. Si vous
+          souhaitez me rencontrer, je consulte au cabinet à Tours (37) et au
+          cabinet au Trois Îlets (972).
+        </p>
+        <p class="text-lg lg:text-xl mb-4 w-5/6 font-thin">
+          Je suis à votre écoute et je vous dis à bientôt.
+        </p>
+        <p class="text-xl lg:text-2xl mb-4 w-5/6 font-thin italic">Évelyne</p>
+
+        <div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-12 gap-6">
+    <div class="col-start-2 col col-span-10 md:col-start-5 md:col-span-4">
+      <Image src={logo} alt="logo" />
+    </div>
+  </div>
+
+  <div class="divider mx-8"></div>
+
+  <div class="grid grid-cols-12 gap-6 max-w-2xl mx-auto">
+    <div class="col-start-1 col-span-12 text-center">
+      <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">
+        Ressources videos et entrevues
+      </p>
+    </div>
+
+    <div class="col-start-1 col-span-12">
+      <div class="">
+        <div
+          style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"
+        >
+          <iframe
+            style="width:100%;height:100%;position:absolute;left:0px;top:0px;overflow:hidden"
+            src="https://www.dailymotion.com/embed/video/x8sr8qo"
+            width="100%"
+            height="100%"
+            allowfullscreen
+            title="Dailymotion Video Player"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider mx-8" id="contact"></div>
+  <div class="grid grid-cols-12 gap-6 py-8 mb-8 max-w-7xl mx-auto">
+    <div class="col-start-1 col-span-12 text-center">
+      <p class="text-3xl lg:text-4xl mb-4 text-secondary font-thin">Contact</p>
+    </div>
+
+    <div class="col-start-1 col-span-12 max-w-2xl mx-auto">
+      <div class="w-96 border-2 border-base-300 rounded-md">
+        <iframe
+          class="w-full h-96"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3862.010368716898!2d-61.06582242489493!3d14.541399585938024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sca!4v1711640924601!5m2!1sfr!2sca"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="rounded flex flex-col justify-center items-center my-4">
+          <div class="text-left">
+            <p class="text-xl lg:text-2xl mb-2 font-thin text-secondary">
+              Adresse
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">1 rue de la dorade,</p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">les trois ilets,</p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">97231</p>
+
+            <p class="text-xl lg:text-2xl mb-2 font-thin text-secondary">
+              Téléphone
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">0696204415</p>
+
+            <p class="text-xl lg:text-2xl mb-2 font-thin text-secondary">
+              Email
+            </p>
+            <p class="text-lg lg:text-xl mb-4 font-thin">
+              evelyne@bienetrepsy.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <Footer />
 </BaseLayout>
